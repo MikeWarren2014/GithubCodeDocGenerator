@@ -1,0 +1,77 @@
+// cases in which there exist lines that contain alphabetic characters
+
+int x = 3; 	// variable
+// int y = 4; // comment
+/* int x = 6; // another comment */
+int a = 1, b = 2, c = 3;	// multiple variable definition
+long   x = 50;
+long y  = 3145; /* long comment on one line that somehow
+	needs multiple lines. The parser should be able to handle this. */
+long z = 10;
+
+# yet another comment
+function  a()
+{
+	// stuff here
+	// /* Figure out an algorithm for this case, too */
+} 
+
+function b() { /* more stuff */ }
+
+function c(something) {
+	/* do stuff here */ 
+}
+
+int d   ()
+{
+	return 0;
+}
+
+double d () { return 3.14; }
+
+/* Multi
+	 * line
+	 * comment */
+	/* Here's another.
+	// The purpose of these is to outline an algorithm that is about to be implemented */
+	
+string d(string arg)
+{
+	
+}
+
+void d() { /* Notice the lack of data type. You need to do something about this case */}
+	int e() { /* notice the space before this */ return 0; }
+double sum_squared(double x, double y)
+{
+	/* multi-parameter function */
+	return x*x + y*y;
+}
+
+void multiArgFunction(int first_arg,
+	double second_arg,
+	string third_arg,
+	CustomType user_defined_arg)
+{
+
+}
+
+void neatlyTypedFunction(int    first_arg,
+						 double second_arg,
+						 string third_arg)
+{
+
+}
+
+int toInteger (char c)
+{
+	return (int)(c);
+}
+
+// code should throw exception because of this function
+void weirdFunctionDeclaration
+	()
+{
+	
+}
+	
